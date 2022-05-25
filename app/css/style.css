@@ -44,6 +44,10 @@ input {
   outline-color: #C6C5EA;
 }
 
+input::placeholder {
+  opacity: .5;
+}
+
 .container {
   display: flex;
   justify-content: center;
