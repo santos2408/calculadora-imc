@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/css/style.css">
+  <title>Calculadora IMC</title>
+</head>
+
+<body>
+  <div class="container">
+    <article class="calculator">
+      <div class="header">
+        <h1 class="header__title">Calculadora IMC</h1>
+        <p class="header__paragraph">A classificação do índice de massa corporal (IMC), pode ajudar a identificar obesidade ou desnutrição em crianças, adolescentes, adultos e idosos. Coloque os seus dados na calculadora a seguir e saiba qual é o seu IMC:</p>
+      </div>
+      <form class="form" data-form="form">
+        <label for="idade">Idade</label>
+        <input type="text" id="idade" placeholder="Ex: 25">
+        <label for="peso">Peso</label>
+        <input type="text" id="peso" placeholder="Ex: 62.5">
+        <label for="altura">Altura</label>
+        <input type="text" id="altura" placeholder="Ex: 1.78">
+        <button type="submit" class="botao">Calcular</button>
+      </form>
+      <div class="resultado">
+        <h2 class="imc__resultado" data-imc="imc"></h2>
+        <p class="imc__info" data-info="info"></p>
+      </div>
+    </article>
+  </div>
+
+  <script src="app/js/app.js"></script>
+</body>
+
+</html>
