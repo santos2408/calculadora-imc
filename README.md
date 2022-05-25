@@ -32,7 +32,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto:
 
-Link do Projeto: [Calculadora IMC](https://rogersanttos-homeyou.netlify.app)
+Link do Projeto: [Calculadora IMC](https://rogersanttoss-calculadora-imc.netlify.app/)
 
 <!-- ## 🎨 Inspiração:
 
