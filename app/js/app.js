@@ -21,8 +21,8 @@ const getCategoryIMC = totalIMC => {
   }
 
   if (category.underWeight) showResultIMC(totalIMC, `Você está abaixo do peso`)
-  if (category.idealWeight) showResultIMC(totalIMC, `Você está abaixo do peso`)
-  if (category.overWeight) showResultIMC(totalIMC, `Você está abaixo do peso`)
+  if (category.idealWeight) showResultIMC(totalIMC, `Você está no peso ideal`)
+  if (category.overWeight) showResultIMC(totalIMC, `Você está acima do peso`)
 }
 
 form.addEventListener('submit', event => {
