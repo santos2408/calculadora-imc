@@ -30,11 +30,9 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 - CSS
 - JavaScript
 
-<!-- ## 🚧 Projeto:
+## 🚧 Projeto:
 
-Em construção:
-
-- [ x ] - Mobile -->
+Link do Projeto: [Calculadora IMC](https://rogersanttos-homeyou.netlify.app)
 
 <!-- ## 🎨 Inspiração:
 
