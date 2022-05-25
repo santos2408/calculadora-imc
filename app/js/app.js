@@ -13,6 +13,18 @@ const showResultIMC = (totalIMC, message) => {
   imcInfo.textContent = `${message}`
 }
 
+const getCategoryIMC = totalIMC => {
+  const category = {
+    underWeight: totalIMC < 18.5,
+    idealWeight: totalIMC >= 18.5 && totalIMC <= 24.9,
+    overWeight: totalIMC >= 25.0
+  }
+
+  if (category.underWeight) showResultIMC(totalIMC, `Você está abaixo do peso`)
+  if (category.idealWeight) showResultIMC(totalIMC, `Você está abaixo do peso`)
+  if (category.overWeight) showResultIMC(totalIMC, `Você está abaixo do peso`)
+}
+
 form.addEventListener('submit', event => {
   event.preventDefault()
 
@@ -20,20 +32,5 @@ form.addEventListener('submit', event => {
   const height = (inputHeight.value).replace(',', '.')
 
   const totalIMC = calculateIMC(weight, height)
-
-  const underWeight = totalIMC < 18.5
-  const idealWeight = totalIMC >= 18.5 && totalIMC <= 24.9
-  const overWeight = totalIMC >= 25.0
-
-  if (underWeight) {
-    showResultIMC(totalIMC, `Você está abaixo do peso`)
-  }
-
-  if (idealWeight) {
-    showResultIMC(totalIMC, `Você está no peso ideal`)
-  }
-
-  if (overWeight) {
-    showResultIMC(totalIMC, `Você está acima do peso`)
-  }
+  getCategoryIMC(totalIMC)
 })
